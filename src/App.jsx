@@ -35,7 +35,7 @@ const [isLastq, setIsLastq]=useState(false)
   }, [currentQuestion, quizStarted]);
   const handleAQnswerClick = (selectedAnswer) => {
     if (selectedAnswer === questions[currentQuestion].answer) {
-      setScores(prevScore => prevScore + 1);
+			setScore(prevScore => prevScore + 1);
     }
   };
   const handleNextQuestion = () => {
