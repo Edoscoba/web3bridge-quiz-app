@@ -18,7 +18,7 @@ const Questions = ({ questions,
       <div>
         <div className="card-body">
           <p className="mt-2 text-warning">
-            Time remaining: {timer < 5 ? <span className='text-danger'>timer</span>: timer }
+            Time remaining: {timer <= 5 ? <span className='text-danger'>{timer}</span>: timer }
           </p>
           <h4 className="card-text">
             {questions[currentQuestion].id}{') '}
@@ -50,8 +50,7 @@ const Questions = ({ questions,
           <div className="row">
             <div className="col">
               <p className="card-title">
-                Question {currentQuestion + 1}
-                of {questions.length}
+                Question {currentQuestion + 1} of {questions.length}
               </p>
             </div>
             <div className="col">

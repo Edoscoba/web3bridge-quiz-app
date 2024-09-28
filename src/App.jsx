@@ -55,7 +55,7 @@ const [isLastq, setIsLastq]=useState(false)
 		align-items-center"
 		style={{ maxWidth: '600px', margin: '0 auto' }}>
 	<h1 className="text-success mt-2">Web3bridge quiz</h1>
-	<h3 className=" mt-2">Quiz App</h3>
+	
 	<div>
 		
 		{!quizStarted ? (
